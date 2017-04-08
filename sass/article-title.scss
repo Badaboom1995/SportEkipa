@@ -1,0 +1,18 @@
+.article-title{
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+    &__text{
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 28px;
+        font-weight: normal;
+    }
+    &__img{
+        height: 400px;
+        overflow:hidden;
+        img{
+            width: 100%;
+            overflow: hidden;
+        }
+    }
+}

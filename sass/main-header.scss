@@ -1,0 +1,93 @@
+.main-header{
+	&__top-line{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding:10px 0px;
+		margin: 0 auto;
+	}
+	&__describe{
+		width: 332px;
+		font-size: 16px;
+		font-weight: normal;
+		color: $grey;
+	}
+	&__phones{
+		font-size: 16px;
+		color: $grey-dark;
+	}
+	&__phones-item{
+		margin-bottom: 5px;
+		margin-top: 0;
+	}
+	&__bottom-line{
+		background-color: $grey-lighter;
+	}
+	&__bottom-line-inner{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__nav-list{
+		margin: 0;
+		padding: 0;
+		padding-left: 0;
+		display: flex;
+	}
+	&__nav-item{
+		list-style: none;
+		display: inline-block;
+	}
+	&__nav-item:first-child a{
+		padding-left: 0;
+	}
+	&__nav-link{
+		color: $grey-dark;
+		padding: 10px 30px;
+		text-decoration: none;
+		display: inline-block;
+		transition: 0.3s all ease;
+		&:hover{
+			color: $grey-darker;
+		}
+	}
+	&__feedback-btn{
+		color: $red;
+		transition: 0.3s all ease;
+		&:hover{
+			background-color: $red;
+			color: $grey-lighter;
+		}
+	}
+	&__search-form{
+		display: flex;
+		align-items: center;
+	}
+	&__search-input{
+		height: 20px;
+		width: 175px;
+		padding: 3px;
+		&:hover,&:focus{
+			outline: none;
+		}
+	}
+	&__search-btn{
+		margin-left: -5px;
+		margin-top: -5px;
+		height: 28px;
+		width: 30px;
+		display: inline-block;
+		background-color: $blue;
+		border: none;
+		outline: none;
+		background-image: url(../img/search.svg);
+		background-size: 20px 20px;
+		background-position: 5px 5px;
+		background-repeat: no-repeat;
+		color: transparent;
+		cursor: pointer;
+		&:hover{
+			background-color: darken($blue,10%);
+		}
+	}
+}

@@ -1,0 +1,27 @@
+.btn{
+	min-width: 220px;
+	padding: 10px;
+	font-size: 22px;
+	color: $grey-lighter;
+	background-color: $red;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	margin-left: auto;
+	border: none;
+	&--small{
+		min-width:150px;
+	}
+	&--catalog{
+		background-color: transparent;
+		border: 1px solid $grey;
+		color: #000;
+		margin: 30px auto;
+		display:block;	
+		width: 320px;
+	}
+	&:hover{
+		background-color: darken($red,10%);
+		cursor: pointer;
+	}
+}

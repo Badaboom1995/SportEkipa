@@ -1,0 +1,25 @@
+.adviced-article{
+	width: 23%;
+	margin-right: 2%;
+	&__title{
+		font-size: 16px;
+		font-weight: bold;
+		margin-bottom: 15px;
+	}
+	&__list{
+		margin: 0;
+		padding: 0;
+	}
+	&__list-item{
+		list-style:none;
+		margin-bottom: 0px;
+	}
+	&__link{
+		color: $grey;
+		font-size: 14px;
+		text-decoration: none;
+		&:hover{
+			color: $grey-darker;
+		}
+	}
+}

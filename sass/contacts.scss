@@ -1,0 +1,25 @@
+.contacts{
+    padding: 30px;
+    padding-left: 0;
+    width: 890px;
+    // margin: 0 auto;
+    &__title{
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    &__block{
+        border-bottom: 1px solid $grey-light;
+    }
+    &__text-block{
+        margin-bottom: 30px;
+    }
+    &__text{
+        line-height: 1.5em;
+    }
+    &__map{
+        iframe{
+            width: 100%;
+        }
+        margin-bottom: 30px;
+    }
+}

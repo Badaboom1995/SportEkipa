@@ -1,0 +1,237 @@
+.catalog{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+	padding-top: 30px;
+	&__aside-menu{
+		width: 23%;
+		margin-right: 2%;
+	}
+	&__navigation{
+		background-color: $grey-lighter;
+		border-bottom: none;
+	}
+	&__nav-link{
+		text-decoration: none;
+		color: $grey-darker;
+		font-size: 22px;
+		padding: 10px;
+		display: block;
+		padding-bottom: 0;
+		margin-bottom: 10px;
+		&--no{
+			padding: 10px;
+			text-align: center;
+		}
+	}
+	&__inner-list{
+		margin: 0;
+		padding: 0;
+	}
+	&__inner-item{
+		list-style: none;
+	}
+	&__inner-link{
+		text-decoration: none;
+		color: $grey-darker;
+		padding: 5px;
+		display: block;
+		cursor: pointer;
+		padding: 10px;
+		padding-left: 20px;
+		font-size: 16px;
+		&:hover{
+			background-color: $grey-light;
+		}
+	}
+	&__inner-link--active{
+		font-weight: bold;
+	}
+	&__filtres{
+		display:none;
+		background-color: $grey-lighter;
+		padding: 0px 10px;
+		input[type='checkbox'],input[type='radio']{
+			display: none;
+		}
+		input[type='checkbox']:checked + .catalog__filter-checkbox:after{
+			content: '';
+			position: absolute;
+			left: 15px;
+			top: 0px;
+			display: inline-block;
+			width: 17px;
+			height: 10px;
+			border-right: 2px solid $grey-darker;
+			border-top: 2px solid $grey-darker;
+			transform:rotate(135deg);
+			box-shadow: 0px -2px 0px 2px $grey-lighter;
+		}
+	}
+	&__filtres-group{
+		display: flex;
+		flex-direction: column;
+		border: none;
+		margin-bottom: 10px;
+		padding: 0;
+		padding-bottom: 10px;
+		border-bottom: 1px solid $grey-light;
+		&:last-child{
+			border-bottom: none;
+		}
+	}
+	&__group-title{
+		font-weight: bold;
+		margin-bottom: 10px;
+		margin-left: -2px;
+		font-size: 16px;
+		display: block;
+		padding: 10px;
+		width: 93.5%;
+	}
+	&__filter-checkbox{
+		padding: 5px;
+		position: relative;
+		padding-left: 45px;
+		display: inline-block;
+		cursor: pointer;
+		&:before{
+			content: '';
+			position: absolute;
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			border: 1px solid $grey-darker;
+			border-radius: 3px;
+			left: 10px;
+			top: 0;
+		}
+	}
+	&__products{
+		width: 75%;
+		margin-bottom: 30px;
+		padding-top: 30px;
+		border-top: 1px solid $grey-light;
+		&--discount{
+			width: 100%;
+		}
+	}
+	&__products-wrapper{
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 50px;
+	}
+	&__item{
+		width: 25%;
+		box-sizing: border-box;
+		padding:0px 10px;
+		text-align: center;
+		cursor: pointer;
+		height: 295px;
+		text-decoration: none;
+		color: $grey-darker;
+		border: 1px solid transparent;
+		transition:0.2s all ease;
+		position: relative;
+		background-color: $white;
+		&:nth-child(4n){
+			margin-right: 0;
+		}
+		&:hover{
+			z-index: 2;
+		}
+		&:hover::before{
+			content: 'Подробнее';
+			position: absolute;
+			background-repeat: no-repeat;
+			background-position: 10px 10px;
+			display: flex;
+			color: #000;
+			padding: 5px 10px;
+			background-color:$grey-light;
+			font-size: 22px;
+			top: 100px;
+			left: 50%;
+			transform:translateX(-50%);
+			z-index: 3;
+		}
+		.rating{
+			height: 0;
+			opacity: 0;
+			overflow: hidden;
+			box-sizing: border-box;
+			margin-bottom: 7px;
+			bottom: -10px;
+			width: 100%;
+			z-index: 2;
+			transition:0.3s all ease;
+		}
+	}
+	&__item--disabled{
+		display: none;
+	}
+	&__item:hover{
+		.rating{
+			opacity: 1;
+			height: 15px;
+		}
+	}
+	&:last-of-type{
+		margin-bottom: 50px;
+	}
+	&__item-photo{
+		overflow: hidden;
+		width: 150px;
+		height: 150px;
+		img{
+			margin-top: 30px;
+			height: 110px;
+			max-width: 90%;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+	&__another-products{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 100%;
+		border-top: 1px solid $grey-light;
+		padding-top: 10px;
+	}
+	&__another-title{
+		width: 100%;
+		font-size: 22px;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	&__item-title{
+		font-size: 16px;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+	&__item-type{
+		font-size: 16px;
+		color: #888;
+		display:block;
+		margin-bottom: 5px;
+	}
+	&__item-price{
+		font-size: 28px;
+		position: relative;
+		font-weight: normal;
+		display: inline-block;
+		bottom: 0;
+	}
+	&__old-price{
+		font-size: 22px;
+		margin-right: 10px;
+		color:$red;
+		text-decoration:line-through;
+	}
+	button{
+		display: none;
+	}
+}

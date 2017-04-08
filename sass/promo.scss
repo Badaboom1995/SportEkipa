@@ -1,0 +1,33 @@
+.promo{
+	background-color: $grey-darker;
+	background-image: url(../img/promo-img.jpg);
+	background-size: cover;
+	background-position: -125px 0;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	text-align: right;
+	margin-bottom: 50px;
+	&__call-text{
+		color: $red;
+		font-size: 72px;
+		width: 546px;
+		text-align: center;
+		margin: 0;
+		margin-bottom: 40px;
+		margin-left: auto;
+		padding: 10px;
+		background-color: rgba(70,70,70,0.5);
+		text-align: center;
+	}
+	&__semantic-text{
+		color: $grey-lighter;
+		width: 780px;
+		margin-left: auto;
+		font-size: 48px;
+		text-align: left;
+		padding: 10px;
+		margin-bottom: 40px;
+		line-height: 1.5em;
+		background-color: rgba(70,70,70,0.5);
+	}
+}

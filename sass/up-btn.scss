@@ -1,0 +1,17 @@
+.up-btn{
+    border: 1px solid $grey;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    padding: 20px 40px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition:0.3s all ease;
+    background-color: #fff;
+    @media(max-width:1260px){
+        padding: 10px 20px;
+    }
+    &:hover{
+        background-color: $grey-lighter;
+    }
+}

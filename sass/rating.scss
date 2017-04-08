@@ -1,0 +1,14 @@
+.rating{
+	margin-bottom: 15px;
+	transition:0.3s all ease;
+	&__star{
+		width: 16px;
+		height: 16px;
+		display: inline-block;
+		background-image: url(../img/star.svg);
+		background-size: contain;
+	}
+	 &__star--empty{
+	 	background-image: url(../img/star-empty.svg);
+	 }
+}

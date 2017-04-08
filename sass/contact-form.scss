@@ -1,0 +1,118 @@
+.contact-form{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.8);
+	z-index: 999;
+	transition:0.3s all ease;
+	cursor: pointer;
+	&--hidden{
+		display: none;
+	}
+	&__inner{
+		position: fixed;
+	left: 50%;
+	top: 30%;
+	transform:translateX(-50%);
+	background-color: $grey-lighter;
+	padding: 20px;
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	}
+	&__title{
+		font-size: 22px;
+		text-align: center;
+		color: $grey-dark;
+	}
+	&__exit{
+		position: absolute;
+		right: -45px;
+		top: -45px;
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		background-color: rgba(255,255,255,0);
+		border: none;
+		cursor: pointer;
+		transition:0.3s all ease;
+		&::before,&::after{
+			content: "";
+			left: 20px;
+			top: 29px;
+			position: absolute;
+			width: 20px;
+			height: 2px;
+			display: inline-block;
+			background-color: $grey-lighter;
+			transform:rotate(45deg);
+		}
+		&::after{
+			transform:rotate(-45deg);
+		}
+		&:hover{
+			background-color: rgba(255,255,255,0.1);
+		}
+		&:focus{
+			outline: none;
+		}
+		&:active{
+			background-color: rgba(255,255,255,0.3);
+		}
+	}
+	input[type="text"]{
+		margin-bottom: 10px;
+		padding: 5px;
+		text-align: center;
+		height: 20px;
+		border: 1px solid $grey-light;
+		transition:0.3s all ease;
+		font-size: 16px;
+		position: relative;
+		overflow: hidden;
+		&::-webkit-input-placeholder{
+		 	transition:0.3s all ease;
+		}
+		&::-moz-placeholder          {transition:0.3s all ease;}
+		&:-moz-placeholder           {transition:0.3s all ease;}
+		&:-ms-input-placeholder      {transition:0.3s all ease;}
+		&:hover{
+			border: 1px solid $grey-darker;
+		}
+		&:focus{
+			outline: none;
+			transform:scale(1.1);
+			border: 1px solid $grey-darker;
+		}
+		&:focus::-webkit-input-placeholder{
+			transform:translateX(100px);
+			opacity: 0;
+		}
+		// &::-moz-placeholder          {transform:translateX(100px);opacity: 0;}
+		// &:-moz-placeholder           {transform:translateX(100px);opacity: 0;}
+		&:-ms-input-placeholder      {transform:translateX(100px);opacity: 0;}
+	}
+	input[type="submit"]{
+		padding: 10px;
+		text-align: center;
+		background-color: $blue;
+		border: none;
+		font-size: 22px;
+		color: $grey-lighter;
+		cursor: pointer;
+		transition:0.1s all ease;
+		&:hover{
+			background-color: darken($blue,10%);
+		}
+		&:focus{
+			outline: none;
+			transform:scale(0.95);
+		}
+		&:active{
+			background-color: darken($blue,20%);
+		}
+	}
+}

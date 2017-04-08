@@ -1,0 +1,51 @@
+.advantages{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 50px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid $grey-light;
+	&__item{
+		width: 32%;
+		text-align: center;
+		color:$grey;
+		position: relative;
+		padding-left: 40px;
+		&::before{
+			content: '';
+			position: absolute;
+			left: 0px;
+			top: 50%;
+			transform:translateY(-50%);
+		}
+		&--price::before{
+			content: '10%';
+			font-size: 40px;
+			left: 20px;
+			font-weight: bold;
+			color: $grey;
+		}
+		&--deliver{
+			padding-left: 30px;
+		}
+		&--deliver::before{
+			background-image: url(../img/deliver-car.png);
+			width: 80px;
+			height: 80px;
+			left: -10px;
+			background-size: contain;
+			display: inline-block;
+			padding-left: 30px;
+			box-sizing: border-box;
+		}
+		&--payment::before{
+			background-image: url(../img/credit-card.png);
+			width: 70px;
+			height: 70px;
+			left: 20px;
+			background-size: contain;
+			display: inline-block;
+			padding-left: 30px;
+			box-sizing: border-box;
+		}
+	}
+}

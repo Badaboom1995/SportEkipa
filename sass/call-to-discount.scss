@@ -1,0 +1,46 @@
+.call-to-discount{
+	background-color: $purple;
+	padding: 50px 0px;
+	text-align: center;
+	margin-bottom: 50px;
+	&__content-wrapper{
+		width: 540px;
+		margin-left: auto;
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			width: 600px;
+			height: 400px;
+			background-image: url(../img/manandwoman.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			left: -530px;
+			bottom: -50px;	
+
+		}
+	}
+	&__title{
+		font-size: 36px;
+		color: $grey-lighter;
+		margin-bottom: 70px;
+		text-align: left;
+	}
+	&__text{
+		font-size: 22px;
+		color: $grey-lighter;
+		margin-bottom: 40px;
+	}
+	&__btn{
+		padding: 10px 26px;
+		background-color: $grey-lighter;
+		color: $grey-darker;
+		display: inline-block;
+		text-decoration: none;
+		font-size: 22px;
+		transition:0.3s all ease;
+		&:hover{
+			background-color:$grey-light;
+		}
+	}
+}

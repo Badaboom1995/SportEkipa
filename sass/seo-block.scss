@@ -1,0 +1,15 @@
+.seo-block{
+	padding: 20px 20px;
+	border-top: 1px solid $grey-light;
+	&__main-title{
+		font-size: 22px;
+		margin-top: 0;
+	}
+	&__title{
+		font-size: 14px;
+		font-weight: bold;
+	}
+	&__text{
+		font-size: 14px;
+	}
+}

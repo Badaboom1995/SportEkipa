@@ -1,0 +1,35 @@
+.breadcrumbs{
+	margin-bottom: 25px;
+	margin-top: 10px;
+	&__list{
+		margin: 0;
+		padding: 10px;
+		padding-left: 0px;
+		display: flex;
+	}
+	&__item{
+		list-style: none;
+		margin-right: 10px;
+		position: relative;
+		&::after{
+			content: "/";
+			position: absolute;
+			color: $grey;
+			right: -18px;
+			width: 15px;
+			height: 15px;
+		}
+		&:last-child::after{
+			content: '';
+		}
+		&:first-child a{
+			padding-left: 0;
+		}
+	}
+	&__link{
+		text-decoration: none;
+		color: $grey;
+		padding: 5px;
+		font-size: 14px;
+	}
+}

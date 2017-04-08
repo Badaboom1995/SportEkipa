@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="main-header">
+		<div class="container main-header__top-line">
+			<a href="index.html" class="logo"></a>
+			<h1 class="main-header__describe">Экипировка для бодибилдинга, пауэрлифтинга, фитнеса. Доставка по РФ.</h1>
+			<div class="main-header__phones">
+				<p class="main-header__phones-item">8 (800) 707-17-59</p>
+				<p class="main-header__phones-item">8 (499) 110-93-59</p>
+			</div>
+		</div>
+		<div class="main-header__bottom-line">
+		<div class="container main-header__bottom-line-inner">
+			<nav class="main-header__main-nav">
+				<ul class="main-header__nav-list">
+					<li class="main-header__nav-item"><a href="catalog.html" class="main-header__nav-link">Каталог</a></li>
+					<li class="main-header__nav-item"><a href="discount.html" class="main-header__nav-link">Акции</a></li>
+					<li class="main-header__nav-item"><a href="blog.html" class="main-header__nav-link">Статьи</a></li>
+					<li class="main-header__nav-item"><a href="delivery.html" class="main-header__nav-link">Доставка</a></li>
+					<li class="main-header__nav-item"><a href="contacts.html" class="main-header__nav-link">Контакты</a></li>
+					<li class="main-header__nav-item"><a href="consult.html" class="main-header__nav-link main-header__feedback-btn">Консультация</a></li>
+				</ul>
+			</nav>
+			<div class="main-header__user-block">
+				<form method="get" class="main-header__search-from">
+					<input type="text" class="main-header__search-input" placeholder="Поиск" required>
+					<input type="submit" class="main-header__search-btn">
+				</form>
+			</div>
+		</div>
+		</div>
+		<div class="contact-form contact-form--hidden">
+			<form action="form.php" method="get" class="contact-form__inner">
+				<p class="contact-form__title">Заполните форму и наш специалист свяжется с вами</p>
+				<input type="text" name="name" placeholder="Ваше имя" required>
+				<input type="text" name="phone" placeholder="Ваш телефон" required>
+				<input type="text" name="time-to-call" placeholder="Удобное время звонка" required>
+				<input type="submit">
+				<span class="contact-form__exit"></span>
+			</form>
+		</div>
+	</header>
+	<main class = "container">
+		<div class="breadcrumbs">
+			<nav class="breadcrumbs__nav">
+				<ul class="breadcrumbs__list">
+					<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+					<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Атлетические пояса</a></li>
+					<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Пояс для пауэрлифтинга с карабином</a></li>
+				</ul>
+			</nav>
+		</div>
+		<h1 class="main-title">Пояс для пауэрлифтинга с карабином</h1>
+		<div class="product">
+			<div class="product__main-info">
+				<div class="product__images">
+					<div class="product__main-img"><img src="img/poyas-s-karabinom-10mm.png" alt=""></div>
+					<div class="product__thumbnail">
+						<div class="product__thumbnail-wrapper"><img src="img/poyas-s-karabinom-rozovyij-230.png" alt=""></div>
+						<div class="product__thumbnail-wrapper"><img src="img/poyas-s-karabinom-10mm.png" alt=""></div>
+						<div class="product__thumbnail-wrapper"><img src="img/poyas-s-karabinom-sinij-230.png" alt=""></div>
+					</div>
+				</div>
+				<div class="product__properties-and-options">
+					<p class="product__price">
+						<span class="product__old-price">4990</span>
+						<span class="product__current-price">3990</span>
+					</p>
+					<div class="product__main-properties">
+						<ul class="product__properties-list">
+							<li class="product__properties-item">
+								<span class="product__properties-name">Цвет:</span>
+								<span class="product__properties-value">черный, синий, розовый</span>
+							</li>
+							<li class="product__properties-item">
+								<span class="product__properties-name">Слойность:</span>
+								<span class="product__properties-value">2 слоя натуральной кожи</span>
+							</li>
+							<li class="product__properties-item">
+								<span class="product__properties-name">Толщина:</span>
+								<span class="product__properties-value">10 мм</span>
+							</li>
+							<li class="product__properties-item">
+								<span class="product__properties-name">Ширина:</span>
+								<span class="product__properties-value">100 мм</span>
+							</li>
+							<li class="product__properties-item">
+								<span class="product__properties-name">Замок:</span>
+								<span class="product__properties-value">карабин</span>
+							</li>
+							<li class="product__properties-item">
+								<span class="product__properties-name">Материал:</span>
+								<span class="product__properties-value">кожа, литая сталь</span>
+							</li>
+							<li class="product__properties-item">
+								<span class="product__properties-name">Допуск:</span>
+								<span class="product__properties-value">стандарт IPF</span>
+							</li>
+						</ul>
+					</div>
+					<form action="" method="GET" classs="product__option-form">
+						<div class="product__option">
+							<span class="product__option-name">Размер:</span>
+							<ul class="product__option-list">
+								<li class="product__option-item"><input type="radio" name="sizes" id="xs"> <label for="xs">xs</label></li>
+								<li class="product__option-item"><input type="radio" name="sizes" id="s"> <label for="s">s</label></li>
+								<li class="product__option-item"><input type="radio" name="sizes" id="l"> <label for="l">m</label></li>
+								<li class="product__option-item"><input type="radio" name="sizes" id="m"> <label for="m">l</label></li>
+								<li class="product__option-item"><input type="radio" name="sizes" id="xl"> <label for="xl">xl</label></li>
+								<li class="product__option-item"><input type="radio" name="sizes" id="2xl"> <label for="2xl">2xl</label></li>
+								<li class="product__option-item"><input type="radio" name="sizes" id="3xl"> <label for="3xl">3xl</label></li>
+							</ul>
+						</div>
+						<div class="product__option">
+							<span class="product__option-name">Толщина:</span>
+							<ul class="product__option-list">
+								<li class="product__option-item"><input type="radio" name="thickness" id="10mm"> <label for="10mm">10мм</label></li>
+								<li class="product__option-item"><input type="radio" name="thickness" id="13mm"> <label for="13mm">13мм</label></li>
+							</ul>
+						</div>
+						<div class="product__order-block">
+							<div class="product__option product__option--inline">
+								<span class="product__option-name">Кол-во:</span>
+								<div class="product__option-counter">
+									<span class="product__counter-control product__counter-control--minus">-</span>
+									<input value="1" type="text" class="product__option-value">
+									<span class="product__counter-control product__counter-control--plus">+</span>
+								</div>
+							</div>
+							<a href="#" class="btn btn--small">Заказать</a>
+						</div>
+					</form>	
+				</div>
+			</div>
+			<div class="product__additional-info">
+				<div class="product__tabs-nav">
+					<a href="#" class="product__tabs-nav-item product__tabs-nav-item--active" id="description-tab">Описание</a>
+					<a href="#" class="product__tabs-nav-item" id="sizes-tab">Размеры</a>
+					<a href="#" class="product__tabs-nav-item" id="reviews-tab">Отзывы</a>
+					<a href="#" class="product__tabs-nav-item" id="pay-and-deliver-tab">Доставка и оплата</a>
+				</div>
+				<div class="product__tabs-content">
+					<div class="product__tab-description product__tab-active">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/KvylSqhjlz8" frameborder="0" allowfullscreen></iframe>
+						<p class="product__description-text">
+							Двухслойный плотный кожаный пояс для пауэрлифтинга с удобной и практичной застежкой - карабином. Слои проклеены и прошиты сквозным швом, что делает их крепкими и долговечными. Карабин сделан из высокопрочного сплава и покрыт порошковой краской, устойчивой к механическим воздействиям. Карабин не ломается и не лопается при ударах и падении.
+						</p>
+					</div>
+					<div class="product__params ">
+						<table class="product__params-table">
+							<tr class="product__params-row-title">
+								<td>Размер</td>
+								<td>Измерения</td>
+							</tr>
+							<tr class="product__params-row">
+								<td>S</td>
+								<td>24-29</td>
+							</tr>
+							<tr class="product__params-row">
+								<td>m</td>
+								<td>24-29</td>
+							</tr>
+							<tr class="product__params-row">
+								<td>l</td>
+								<td>24-29</td>
+							</tr>
+							<tr class="product__params-row">
+								<td>xl</td>
+								<td>24-29</td>
+							</tr>
+						</table>
+					</div>
+					<div class="product__reviews">
+						<div class="product__reviews-item">
+							<div class="product__review-author-photo">
+								<img src="img/review-poyas1.jpg" alt="">
+							</div>
+							<div class="product__review-info">
+								<div class="product__review-author">Лаишвили Георгий <br> г. Москва</div>
+								<div class="product__review-text"> Спасибо большое! Ремень пришел быстро, упаковка хорошая! Спасибо за консультацию, размер М подошел идеально, есть запас в обе стороны! Буду и дальше у вас заказывать! Оценка за сервис - Отлично!</div>
+								<div class="product__review-rating"></div>
+							</div>
+						</div>
+						<div class="product__reviews-item">
+							<div class="product__review-author-photo">
+								<img src="img/review-poyas2.jpg" alt="">
+							</div>
+							<div class="product__review-info">
+								<div class="product__review-author">Семенов Сергей <br> г. Комсомольск</div>
+								<div class="product__review-text"> Вчера получил заказ. Ремни здесь отличные, спасибо. Крутой магазин, всем рекомендую!</div>
+								<div class="product__review-rating"></div>
+							</div>
+						</div>
+						<div class="product__reviews-item">
+							<div class="product__review-author-photo">
+								<img src="img/review-poyas3.jpg" alt="">
+							</div>
+							<div class="product__review-info">
+								<div class="product__review-author">Семенчук Станислав <br> г. Череповец</div>
+								<div class="product__review-text"> Очень понравился сервис - я не профессионал, но общались со мной вежливо и всё доступно объяснили. Ремень пришел в срок. Теперь с удовольствием хожу в зал. Спина не болит. Спасибо, ребята!</div>
+								<div class="product__review-rating"></div>
+							</div>
+						</div>
+					</div>
+					<div class="product__pay-and-deliver">
+						<div class="product__pay-and-deliver-item">
+							<h3 class="product__pay-and-deliver-title">Москва и МО</h3>
+							<p class="product__pay-and-deliver-content">Доставка по Москве (внутри МКАД) в день заказа или на следующий с 9 до 18 часов (кроме воскресенья) – 350 р.</p>
+							<p class="product__pay-and-deliver-content">Самовывоз со склада в Москве – 250 р.</p>
+							<p class="product__pay-and-deliver-content">Доставка по Московской области в срок 2-3 дня до склада (адрес и часы работы склада уточняйте у оператора) или до двери – от 300 р.</p>
+						</div>
+						<div class="product__pay-and-deliver-item">
+							<h3 class="product__pay-and-deliver-title">Санкт-Петербург и ЛО</h3>
+							<p class="product__pay-and-deliver-content">Доставка по Санкт-Петербургу (внутри КАД, исключая Кронштадт) в день заказа или на следующий с 9 до 20 часов (кроме воскресенья) – 300 р.</p>
+							<p class="product__pay-and-deliver-content">Доставка по Ленинградской области в срок 2-4 дня до склада (адрес и часы работы склада уточняйте у оператора) или до двери – от 300 р.</p>
+						</div>
+						<div class="product__pay-and-deliver-item">
+							<h3 class="product__pay-and-deliver-title">Вся Россия</h3>
+							<p class="product__pay-and-deliver-content">Курьерской службой в срок 3-5 дней до вашей двери или склада (адрес и часы работы склада уточняйте у оператора) – от 300 р.</p>
+							<p class="product__pay-and-deliver-content">Первым классом почты России в срок 5-7 дней – от 300 р.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="adviced-goods">
+				<p class="adviced-goods__main-title">C этим товаром покупают</p>
+				<div class="adviced-goods__wrapper">
+					<div class="adviced-goods__item">
+						<img src="img/goodlift.png" alt="">
+						<h2 class="adviced-goods__title">Ботинки Goodlift</h2>
+						<div class="adviced-goods__description">Пояс для тяжелой атлетики</div>
+						<div class="adviced-goods__rating">
+							<span class="adviced-goods__rating-star"></span>
+							<span class="adviced-goods__rating-star"></span>
+							<span class="adviced-goods__rating-star"></span>
+							<span class="adviced-goods__rating-star"></span>
+							<span class="adviced-goods__rating-star"></span>
+						</div>
+						<span class="adviced-goods__price">2190</span>
+					</div>
+					<div class="adviced-goods__item">
+						<img src="img/goodlift.png" alt="">
+						<h2 class="adviced-goods__title">Ботинки Goodlift</h2>
+						<div class="adviced-goods__description">Пояс для тяжелой атлетики</div>
+						<div class="adviced-goods__rating">
+							<span class="adviced-goods__rating-star"></span>
+							<span class="adviced-goods__rating-star"></span>
+							<span class="adviced-goods__rating-star"></span>
+							<span class="adviced-goods__rating-star"></span>
+							<span class="adviced-goods__rating-star adviced-goods__rating-star--empty"></span>
+						</div>
+						<span class="adviced-goods__price">2190</span>
+					</div>
+					<div class="adviced-goods__item">
+						<img src="img/goodlift.png" alt="">
+						<h2 class="adviced-goods__title">Ботинки Goodlift</h2>
+						<div class="adviced-goods__description">Пояс для тяжелой атлетики</div>
+						<div class="adviced-goods__rating">
+							<span class="adviced-goods__rating-star"></span>
+							<span class="adviced-goods__rating-star"></span>
+							<span class="adviced-goods__rating-star"></span>
+							<span class="adviced-goods__rating-star"></span>
+							<span class="adviced-goods__rating-star"></span>
+						</div>
+						<span class="adviced-goods__price">2190</span>
+					</div>
+					<div class="adviced-goods__item">
+						<img src="img/goodlift.png" alt="">
+						<h2 class="adviced-goods__title">Ботинки Goodlift</h2>
+						<div class="adviced-goods__description">Пояс для тяжелой атлетики</div>
+						<div class="adviced-goods__rating">
+							<span class="adviced-goods__rating-star"></span>
+							<span class="adviced-goods__rating-star"></span>
+							<span class="adviced-goods__rating-star"></span>
+							<span class="adviced-goods__rating-star"></span>
+							<span class="adviced-goods__rating-star"></span>
+						</div>
+						<span class="adviced-goods__price">2190</span>
+					</div>
+				</div>
+			</div>
+	</main>
+	<footer class="main-footer">
+		<div class="container main-footer__inner">
+			<div class="adviced-article">
+				<p class="adviced-article__title">Рекомендуемые разделы</p>
+				<ul class="adviced-article__list">
+					<li class="adviced-article__list-item"><a href="" class="adviced-article__link">Как выбрать бинты для жима</a></li>
+					<li class="adviced-article__list-item"><a href="" class="adviced-article__link">Как выбрать бинты для жима</a></li>
+					<li class="adviced-article__list-item"><a href="" class="adviced-article__link">Как выбрать бинты для жима</a></li>
+					<li class="adviced-article__list-item"><a href="" class="adviced-article__link">Как выбрать бинты для жима</a></li>
+					<li class="adviced-article__list-item"><a href="" class="adviced-article__link">Как выбрать бинты для жима</a></li>
+					<li class="adviced-article__list-item"><a href="" class="adviced-article__link">Как выбрать бинты для жима</a></li>
+					<li class="adviced-article__list-item"><a href="" class="adviced-article__link">Как выбрать бинты для жима</a></li>
+				</ul>
+			</div>
+			<div class="social">
+				<p class="social__title">Мы в соцсетях</p>
+				<div class="social__icons">
+					<a href="#" class="social__icons-item social__icons-item--vk"></a>
+					<a href="#" class="social__icons-item social__icons-item--fb"></a>
+					<a href="#" class="social__icons-item social__icons-item--inst"></a>
+					<a href="#" class="social__icons-item social__icons-item--twit"></a>
+					<a href="#" class="social__icons-item social__icons-item--youtube"></a>
+				</div>
+				<a href="" class="social__blog-link"></a>
+			</div>
+			<div class="pay-methods">
+				<p class="pay-methods__title">Способы оплаты</p>
+				<div class="pay-methods__ways">
+					<span class="pay-methods__ways-item pay-methods__ways-item--mastercard"></span>
+					<span class="pay-methods__ways-item pay-methods__ways-item--visa"></span>
+					<span class="pay-methods__ways-item pay-methods__ways-item--paypal"></span>
+				</div>
+				<p class="pay-methods__description">
+					Вы можете оплатить покупки
+					наличными при получении, либо
+					выбрать другой способ оплаты. 
+				</p>
+			</div>
+			<div class="main-footer__info">
+				<p class="main-footer__info-tltle">Информация</p>
+				<nav class="main-footer__nav">
+					<ul class="main-footer__nav-list">
+						<li class="main-footer__nav-item"><a href="#" class="main-footer__nav-link">О магазине</a></li>
+						<li class="main-footer__nav-item"><a href="#" class="main-footer__nav-link">Доставка</a></li>
+						<li class="main-footer__nav-item"><a href="#" class="main-footer__nav-link">Оплата</a></li>
+						<li class="main-footer__nav-item"><a href="#" class="main-footer__nav-link">Гарантии</a></li>
+						<li class="main-footer__nav-item"><a href="#" class="main-footer__nav-link">Карта сайта</a></li>
+					</ul>
+				</nav>
+				<div class="main-footer__contacts">
+					<p>© SportEkipa.ru</p>
+					<p>8 (800) 707-17-59</p>
+					<p>8 (499) 110-93-59</p>
+					<p>info@sportekipa.ru</p>
+				</div>
+				<p class="main-footer__working-time">Время работы: пн - вс, 10:00 - 22:00</p>
+			</div>
+		</div>
+	</footer>
+	<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+.social{
+	width: 25%;
+	&__title{
+		font-size: 16px;
+		font-weight: bold;
+	}
+	&__icons{
+		display: flex;
+	}
+	&__icons-item{
+		width: 25px;
+		height: 25px;
+		margin-right: 5px;
+		display: inline-block;
+		&--vk{
+			background-image: url(../img/006-vk-1.svg);
+		}
+		&--twit{
+			background-image: url(../img/002-twitter-1.svg);
+		}
+		&--fb{
+			background-image: url(../img/004-facebook-1.svg);
+		}
+		&--youtube{
+			background-image: url(../img/005-youtube-1.svg);
+		}
+		&--inst{
+			background-image: url(../img/003-instagram-1.svg);
+		}
+
+	}
+}
